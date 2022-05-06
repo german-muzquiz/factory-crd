@@ -1,0 +1,6 @@
+apiVersion: poc.techm.com/v1
+kind: Factory
+metadata:
+  name: guadalajara
+spec:
+  location: Guadalajara

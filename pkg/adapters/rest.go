@@ -3,13 +3,13 @@ package adapters
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/german-muzquiz/factory-crd/pkg/repositories"
+	"github.com/german-muzquiz/factory-crd/pkg/ports"
 	log "github.com/sirupsen/logrus"
 	"net/http"
 )
 
 type RestAdapter struct {
-	FactoryRepository repositories.FactoryRepository
+	FactoryRepository ports.FactoryRepository
 }
 
 func (a *RestAdapter) GetFactories() func(w http.ResponseWriter, r *http.Request) {
