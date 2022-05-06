@@ -17,6 +17,16 @@ spec:
               properties:
                 location:
                   type: string
+            status:
+              type: object
+              properties:
+                currentCapacity:
+                  type: string
+      additionalPrinterColumns:
+        - name: CurrentCapacity
+          type: string
+          description: How many vehicles are being produced
+          jsonPath: .status.currentCapacity
   scope: Namespaced
   names:
     plural: factories
