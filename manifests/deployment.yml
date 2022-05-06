@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: factory-control
+  labels:
+    app: factory-control
+spec:
+  selector:
+    matchLabels:
+      app: factory-control
+  template:
+    metadata:
+      labels:
+        app: factory-control
+    spec:
+      containers:
+        - name: factory-control
+          image: localhost:32000/factory-control:latest
+          imagePullPolicy: Always

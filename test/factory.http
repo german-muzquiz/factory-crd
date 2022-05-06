@@ -1,0 +1,6 @@
+
+GET http://localhost:8080/factories
+
+
+###
+GET http://192.168.64.2/factories
